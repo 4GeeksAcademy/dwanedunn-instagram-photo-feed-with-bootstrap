@@ -24,19 +24,32 @@
     <title>Instagram photo feed with bootstrap</title>
   </head>
   <body>
-    <nav class="menu flex-nowrap row bg-light" role="navigation">
-      <col-6>
-        <div class="logo d-flex align-items-baseline pt-2 ms-2 gap-2">
-          <i class="fa-brands fa-instagram"></i>
-          <p>Instagram</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <i class="fa-brands fa-instagram me-1"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
         </div>
-      </col-6>
-      <col-4> <button class="btn btn-success">Create a new post</button></col-4>
-      <col-2
-        ><button class="btn btn-secondary">
-          <i class="fa-solid fa-gear"></i></button
-      ></col-2>
+      </div>
     </nav>
+
     <!-- Bootstrap JS CDN  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
