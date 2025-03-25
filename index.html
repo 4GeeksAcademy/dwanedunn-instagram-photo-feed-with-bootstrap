@@ -73,22 +73,33 @@
         </div>
       </div>
     </nav>
-    <!-- TABLIST AREA -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#">Grid - 3</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Grid-1 </a>
-      </li>
-    </ul>
-    <!-- END TABLIST AREA -->
+
+    <div class="tab-area d-flex justify-content-center">
+      <!-- TABLIST AREA -->
+
+      <!-- END TABLIST -->
+    </div>
     <div class="container">
-      <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-content tab-pane fade show active p-3"
+        id="3-col-layout"
+        role="tabpanel"
+        aria-labelledby="3-col-layout"
+      >
         <div class="row">
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
+          <div class="col-4">col 4</div>
+          <div class="col-4">col 4</div>
+          <div class="col-4">Col 4</div>
+        </div>
+      </div>
+      <div
+        class="tab-content tab-pane p-3"
+        id="1-col-content"
+        role="tabpanel"
+        aria-labelledby="1-col-content"
+      >
+        <div class="row">
+          <div class="col-6">col 4</div>
         </div>
       </div>
     </div>
