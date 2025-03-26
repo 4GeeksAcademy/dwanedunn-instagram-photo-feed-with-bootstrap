@@ -72,13 +72,89 @@
         </div>
       </div>
     </nav>
+    <!-- TABS -->
+    <div class="container my-5">
+      <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <!-- Button 1 -->
+          <button
+            class="nav-link active"
+            id="nav-3Cols-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-3col"
+            type="button"
+            role="tab"
+            aria-controls="nav-3col"
+            aria-selected="true"
+          >
+            Home
+          </button>
 
-    <div class="tab-area d-flex justify-content-center">
-      <!-- TABLIST AREA -->
+          <!-- Button 2 -->
+          <button
+            class="nav-link"
+            id="nav-single-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-single"
+            type="button"
+            role="tab"
+            aria-controls="nav-single"
+            aria-selected="false"
+          >
+            Single Col
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent1">
+        <div
+          class="tab-pane fade show active p-3"
+          id="nav-3col"
+          role="tabpanel"
+          aria-label="nav-3col"
+        >
+          <h2>3Col Layout</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            debitis veniam consequatur eveniet fuga autem delectus, alias ea?
+            Veniam, ex.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error
+            voluptatem nemo deleniti qui.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic
+            officia distinctio esse molestiae tempore alias, doloribus
+            architecto est vitae!
+          </p>
+        </div>
 
-      <!-- END TABLIST -->
+        <div class="tab-content" id="nav-tabContent2">
+        <div
+          class="tab-pane fade p-3"
+          id="nav-single"
+          role="tabpanel"
+          aria-label="nav-single"
+        >
+          <h2>Single Col</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            debitis veniam consequatur eveniet fuga autem delectus, alias ea?
+            Veniam, ex.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error
+            voluptatem nemo deleniti qui.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error hic
+            officia distinctio esse molestiae tempore alias, doloribus
+            architecto est vitae!
+          </p>
+        </div>
+
+      </div>
     </div>
-
     <!-- Bootstrap JS CDN  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
