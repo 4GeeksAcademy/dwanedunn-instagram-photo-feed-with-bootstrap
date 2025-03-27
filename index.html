@@ -75,10 +75,14 @@
     <!-- TAB Section  -->
     <div class="container my-5">
       <nav>
-        <div class="nav nav-tabs justify-content-center gap-3" id="nav-tab" role="tablist">
+        <div
+          class="nav nav-tabs justify-content-center gap-3"
+          id="nav-tab"
+          role="tablist"
+        >
           <!-- 3 Columns Button -->
           <button
-            class="nav-link "
+            class="nav-link"
             id="nav-3Cols-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-3col"
@@ -103,25 +107,29 @@
           >
             <i class="fa-solid fa-tablet"></i>
           </button>
-        </div> <!-- End of TabList -->
-      </nav> <!-- End of Nav -->
-      <!-- row for 3 col image layout -->
-      <div class="row">
-        <col-4></col-4>
-        <col-4></col-4>
-        <col-4></col-4>
-
-      </div>
-      <div class="tab-content" id="nav-tabContent1">
-        <div
-          class="tab-pane p-3"
-          id="nav-3col"
-          role="tabpanel"
-          aria-label="nav-3col"
-        >
         </div>
+        <!-- End of TabList -->
+      </nav>
+      <!-- End of Nav -->
+      <!-- row for 3 col image layout -->
+      <div class="row tab-content" id="nav-tabContent1">
+      <col-4 class="tab-pane fade p-3 active" id="nav-3col" role="tabpanel">
+        <img
+          src="assets/images/pexels-field-engineer-147254-442150.jpg object-fit-cover"
+          alt=""
+      /></col-4>
+      <col-4></col-4>
+      <col-4></col-4>
+    </div>
+    <div class="tab-content" id="nav-tabContent1">
+      <div
+        class="tab-pane fade p-3"
+        id="nav-3col"
+        role="tabpanel"
+        aria-label="nav-3col"
+      ></div>
 
-        <div class="tab-content" id="nav-tabContent2">
+      <div class="tab-content" id="nav-tabContent2">
         <div
           class="tab-pane fade p-3"
           id="nav-single"
@@ -132,9 +140,7 @@
           <p>
             A single column layout is a great way to display your Instagram.
           </p>
-
         </div>
-
       </div>
     </div>
     <!-- Bootstrap JS CDN  -->
