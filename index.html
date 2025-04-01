@@ -72,7 +72,7 @@
         </div>
       </div>
     </nav>
-    <!-- TAB Section  -->
+    <!-- TABS  -->
     <div class="container my-5">
       <nav>
         <div
@@ -80,71 +80,67 @@
           id="nav-tab"
           role="tablist"
         >
-          <!-- 3 Columns Button -->
+          <!--First Tab Button -->
           <button
-            class="nav-link"
+            class="nav-link active"
             id="nav-3Cols-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-3col"
             type="button"
             role="tab"
-            aria-controls="nav-3col"
+            aria-controls="3-col-layout"
             aria-selected="true"
           >
             <i class="fa-solid fa-table"></i>
           </button>
-          <!--End of Button 1 -->
+          <!--Second Tab Button -->
           <button
             class="nav-link"
             id="nav-single-tab"
             data-bs-toggle="tab"
-            data-bs-target="#nav-single"
+            data-bs-target="#single-col-layout"
             type="button"
             role="tab"
-            aria-controls="nav-single"
+            aria-controls="single-col-layout"
             aria-selected="false"
           >
             <i class="fa-solid fa-tablet"></i>
           </button>
-          <!-- End of Button 2 -->
+          <!-- End of Second Tab Button -->
         </div>
         <!-- End of TabList -->
       </nav>
       <!-- End of Nav -->
-      <!-- row for 3 col image layout -->
-    </div>
-    <div class="tab-content" id="nav-tabContent1">
-      <div
-        class="tab-pane fade p-3"
-        id="nav-3col"
-        role="tabpanel"
-        aria-label="nav-3col"
-      ></div>
-      <!-- Create TAB Content Panel Below -->
-      <div class="tab-content" id="nav-tabContent nav-single">
+      <!-- Tab Content -->
+      <div class="tab-content" id="nav-TabContent">
         <div
-          class="tab-pane fade show active p-3"
+          class="tab-pane fade active show"
+          id="nav-3col"
           role="tabpanel"
-          aria-labelledby="nav-3Cols-tab"
+          aria-labelledby="nav-3col"
         >
-          <div class="container">
-            <div class="row tab-content" id="nav-tabContent2">
-              <div class="col-4">COl 1</div>
-              <div class="col-4">COl 2</div>
-              <div class="col-4">Col 3</div>
-            </div>
-            <!-- End of Row -->
-            <!-- start single col pane-->
-            <div class="row">
-              <div class="col-6">single col</div>
-            </div>
-          </div>
-          <!-- End Container -->
+          <h2>3 Column Layout</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            corrupti molestias nulla quaerat ducimus libero.
+          </p>
         </div>
-        <!-- End tab-pane -->
+        <div
+          class="tab-pane fade active show"
+          id="single-col-layout"
+          role="tabpanel"
+          aria-labelledby="nav-3col"
+        >
+          <h2>Single Column Layout</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
+            corrupti molestias nulla quaerat ducimus libero.
+          </p>
+        </div>
       </div>
-      <!-- End #nav-tabContent -->
+      <!-- End of Tab-Content -->
     </div>
+    <!-- End of container -->
     <!-- Bootstrap JS CDN  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
