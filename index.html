@@ -23,60 +23,82 @@
     <title>Instagram photo feed with bootstrap</title>
   </head>
   <body>
+    <!-- NavBar Area -->
     <!-- use border-danger for testing only -->
-    <nav class="navbar border border-danger navbar-expand bg-light py-3">
-      <div class="container-fluid border border-success">
-        <i class="fa-brands me-2 fa-instagram fa-xl"></i>
-        <h5 class="navbar-brand" href="#">Instagram</h5>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <button
-                type="button"
-                class="btn btn-success"
-                data-bs-toggle="modal"
-                data-bs-target="#post-modal"
-              >
-                Create A Post
-              </button>
-            </li>
-            <li class="nav-item dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-gear"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Privacy and Data</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><p class="dropdown-item text-danger">Log Out</p></li>
-              </ul>
-            </li>
-          </ul>
+    <nav
+      class="navbar navbar-light border border-danger navbar-expand bg-light py-3"
+    >
+      <div
+        class="container-fluid border border-success justify-content-between"
+      >
+        <div class="left-icons-wrap">
+          <i class="fa-brands me-2 fa-instagram fa-xl"></i>
+          <h5 class="navbar-brand" href="#">Instagram</h5>
         </div>
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav">
+            <!-- <li class="nav-item"> -->
+            <div class="d-flex align-right justify-content-end">
+              <div class="d-flex align-right justify-content-end">
+                <!-- modal button trigger -->
+                <!-- Create New Post Buttton -->
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#post-modal"
+                >
+                  Create A New Post
+                </button>
+                <!-- End Create New Post Button -->
+                <!-- Dropdowwn Toggle Cog -->
+                <div class="dropdown"></div>
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <!-- Dropdowwn Toggle Cog -->
+                <!-- Cog Dropdowwn -->
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Privacy and Data</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <p class="dropdown-item text-danger" href="#">Log Out</p>
+                  </li>
+                </ul>
+                <!--End Cog Dropdowwn -->
+              </div>
+              <!-- End Btns-right-wrap -->
+            </div>
+          </div>
+        </div>
+        <!-- End of collapse -->
       </div>
+      <!-- End of container-fluid -->
     </nav>
     <!-- End of navbar -->
     <!-- modal content -->
